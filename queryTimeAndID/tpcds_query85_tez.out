@@ -1,0 +1,336 @@
+
+Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_c5f7ba6b-f046-4caa-a406-2c372b6a4850_1148862096.txt
+OK
+Time taken: 0.89 seconds
+Query ID = ubuntu_20160923024635_1dc9e35a-b1ed-4dd2-9cd5-3264447bd277
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1474574455816_0061)
+
+Map 1: -/-	Map 10: -/-	Map 11: -/-	Map 12: -/-	Map 13: -/-	Map 7: -/-	Map 8: -/-	Map 9: -/-	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0/3	Map 11: 0/1	Map 12: 0/1	Map 13: 0/1	Map 7: 0/12	Map 8: 0/1	Map 9: 0/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+1)/3	Map 11: 0/1	Map 12: 0/1	Map 13: 0/1	Map 7: 0(+2)/12	Map 8: 0/1	Map 9: 0/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+1)/3	Map 11: 0/1	Map 12: 0/1	Map 13: 0/1	Map 7: 0(+3)/12	Map 8: 0/1	Map 9: 0(+1)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 0(+1)/1	Map 12: 0/1	Map 13: 0/1	Map 7: 0(+6)/12	Map 8: 0/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 0(+1)/1	Map 12: 0/1	Map 13: 0/1	Map 7: 0(+6)/12	Map 8: 0(+1)/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 0(+1)/1	Map 12: 0/1	Map 13: 0/1	Map 7: 0(+6)/12	Map 8: 1/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 0(+1)/1	Map 12: 0/1	Map 13: 0/1	Map 7: 2(+4)/12	Map 8: 1/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 0(+1)/1	Map 12: 0/1	Map 13: 0/1	Map 7: 3(+3)/12	Map 8: 1/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 0(+1)/1	Map 12: 0/1	Map 13: 0/1	Map 7: 4(+2)/12	Map 8: 1/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 1/1	Map 12: 0/1	Map 13: 0(+1)/1	Map 7: 4(+2)/12	Map 8: 1/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 1/1	Map 12: 0/1	Map 13: 0(+1)/1	Map 7: 5(+1)/12	Map 8: 1/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 1/1	Map 12: 0/1	Map 13: 0(+1)/1	Map 7: 6(+0)/12	Map 8: 1/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 1/1	Map 12: 0(+1)/1	Map 13: 0(+1)/1	Map 7: 6(+0)/12	Map 8: 1/1	Map 9: 0(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 1/1	Map 12: 0(+1)/1	Map 13: 0(+1)/1	Map 7: 6(+1)/12	Map 8: 1/1	Map 9: 0(+3)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 1/1	Map 12: 0(+1)/1	Map 13: 1/1	Map 7: 6(+1)/12	Map 8: 1/1	Map 9: 0(+3)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+2)/3	Map 11: 1/1	Map 12: 0(+1)/1	Map 13: 1/1	Map 7: 6(+2)/12	Map 8: 1/1	Map 9: 0(+3)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 0(+3)/3	Map 11: 1/1	Map 12: 0(+1)/1	Map 13: 1/1	Map 7: 6(+2)/12	Map 8: 1/1	Map 9: 0(+3)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 1(+2)/3	Map 11: 1/1	Map 12: 0(+1)/1	Map 13: 1/1	Map 7: 6(+3)/12	Map 8: 1/1	Map 9: 0(+3)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 1(+2)/3	Map 11: 1/1	Map 12: 0(+1)/1	Map 13: 1/1	Map 7: 6(+3)/12	Map 8: 1/1	Map 9: 1(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 1(+2)/3	Map 11: 1/1	Map 12: 0(+1)/1	Map 13: 1/1	Map 7: 6(+4)/12	Map 8: 1/1	Map 9: 1(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 1(+2)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 6(+4)/12	Map 8: 1/1	Map 9: 1(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 1(+2)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 6(+5)/12	Map 8: 1/1	Map 9: 1(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 1(+2)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 6(+6)/12	Map 8: 1/1	Map 9: 1(+2)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0/25	Map 10: 2(+1)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 6(+6)/12	Map 8: 1/1	Map 9: 2(+1)/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+1)/25	Map 10: 2(+1)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 6(+6)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+2)/25	Map 10: 2(+1)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 7(+5)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+3)/25	Map 10: 2(+1)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 7(+5)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+3)/25	Map 10: 2(+1)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 8(+4)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+3)/25	Map 10: 2(+1)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 9(+3)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+4)/25	Map 10: 2(+1)/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 9(+3)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+4)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 9(+3)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+4)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 10(+2)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+4)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 11(+1)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+5)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 11(+1)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 11(+1)/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+7)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+8)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-1)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-2)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-2)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-2)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-2)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-2)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-3)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-4)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-4)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-4)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-4)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+12,-5)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-5)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-5)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-5)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-5)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-5)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-6)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-7)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-7)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-7)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-7)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-8)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-9)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 0(+13,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 1(+12,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 1(+12,-10)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 1(+12,-11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 1(+12,-11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 1(+12,-11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 1(+12,-11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 2(+11,-11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 2(+12,-11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 2(+12,-11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 3(+11,-11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+10,-11)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+10,-12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+11,-12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+12,-12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+12,-12)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+12,-13)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+12,-13)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+12,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+12,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+21,-25)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Map 1: 4(+0,-26)/25	Map 10: 3/3	Map 11: 1/1	Map 12: 1/1	Map 13: 1/1	Map 7: 12/12	Map 8: 1/1	Map 9: 3/3	Reducer 2: 0/3	Reducer 3: 0/3	Reducer 4: 0/3	Reducer 5: 0/1	Reducer 6: 0/1	
+Status: Failed
+Vertex failed, vertexName=Map 1, vertexId=vertex_1474574455816_0061_1_04, diagnostics=[Task failed, taskId=task_1474574455816_0061_1_04_000000, diagnostics=[TaskAttempt 3 failed, info=[Error: Failure while running task:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"ws_sold_date_sk":2451522,"ws_sold_time_sk":9822,"ws_ship_date_sk":2451532,"ws_item_sk":30757,"ws_bill_customer_sk":4032,"ws_bill_cdemo_sk":1611027,"ws_bill_hdemo_sk":2422,"ws_bill_addr_sk":259217,"ws_ship_customer_sk":80911,"ws_ship_cdemo_sk":728755,"ws_ship_hdemo_sk":6049,"ws_ship_addr_sk":91444,"ws_web_page_sk":226,"ws_web_site_sk":10,"ws_ship_mode_sk":4,"ws_warehouse_sk":5,"ws_promo_sk":522,"ws_order_number":551477,"ws_quantity":77,"ws_wholesale_cost":40.7,"ws_list_price":94.01,"ws_sales_price":87.42,"ws_ext_discount_amt":507.43,"ws_ext_sales_price":6731.34,"ws_ext_wholesale_cost":3133.9,"ws_ext_list_price":7238.77,"ws_ext_tax":605.82,"ws_coupon_amt":0.0,"ws_ext_ship_cost":3474.24,"ws_net_paid":6731.34,"ws_net_paid_inc_tax":7337.16,"ws_net_paid_inc_ship":10205.58,"ws_net_paid_inc_ship_tax":10811.4,"ws_net_profit":3597.44}
+	at org.apache.hadoop.hive.ql.exec.tez.TezProcessor.initializeAndRunProcessor(TezProcessor.java:171)
+	at org.apache.hadoop.hive.ql.exec.tez.TezProcessor.run(TezProcessor.java:137)
+	at org.apache.tez.runtime.LogicalIOProcessorRuntimeTask.run(LogicalIOProcessorRuntimeTask.java:346)
+	at org.apache.tez.runtime.task.TezTaskRunner$TaskRunnerCallable$1.run(TezTaskRunner.java:179)
+	at org.apache.tez.runtime.task.TezTaskRunner$TaskRunnerCallable$1.run(TezTaskRunner.java:171)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.tez.runtime.task.TezTaskRunner$TaskRunnerCallable.callInternal(TezTaskRunner.java:171)
+	at org.apache.tez.runtime.task.TezTaskRunner$TaskRunnerCallable.callInternal(TezTaskRunner.java:167)
+	at org.apache.tez.common.CallableWithNdc.call(CallableWithNdc.java:36)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"ws_sold_date_sk":2451522,"ws_sold_time_sk":9822,"ws_ship_date_sk":2451532,"ws_item_sk":30757,"ws_bill_customer_sk":4032,"ws_bill_cdemo_sk":1611027,"ws_bill_hdemo_sk":2422,"ws_bill_addr_sk":259217,"ws_ship_customer_sk":80911,"ws_ship_cdemo_sk":728755,"ws_ship_hdemo_sk":6049,"ws_ship_addr_sk":91444,"ws_web_page_sk":226,"ws_web_site_sk":10,"ws_ship_mode_sk":4,"ws_warehouse_sk":5,"ws_promo_sk":522,"ws_order_number":551477,"ws_quantity":77,"ws_wholesale_cost":40.7,"ws_list_price":94.01,"ws_sales_price":87.42,"ws_ext_discount_amt":507.43,"ws_ext_sales_price":6731.34,"ws_ext_wholesale_cost":3133.9,"ws_ext_list_price":7238.77,"ws_ext_tax":605.82,"ws_coupon_amt":0.0,"ws_ext_ship_cost":3474.24,"ws_net_paid":6731.34,"ws_net_paid_inc_tax":7337.16,"ws_net_paid_inc_ship":10205.58,"ws_net_paid_inc_ship_tax":10811.4,"ws_net_profit":3597.44}
+	at org.apache.hadoop.hive.ql.exec.tez.MapRecordSource.processRow(MapRecordSource.java:91)
+	at org.apache.hadoop.hive.ql.exec.tez.MapRecordSource.pushRecord(MapRecordSource.java:68)
+	at org.apache.hadoop.hive.ql.exec.tez.MapRecordProcessor.run(MapRecordProcessor.java:290)
+	at org.apache.hadoop.hive.ql.exec.tez.TezProcessor.initializeAndRunProcessor(TezProcessor.java:148)
+	... 14 more
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"ws_sold_date_sk":2451522,"ws_sold_time_sk":9822,"ws_ship_date_sk":2451532,"ws_item_sk":30757,"ws_bill_customer_sk":4032,"ws_bill_cdemo_sk":1611027,"ws_bill_hdemo_sk":2422,"ws_bill_addr_sk":259217,"ws_ship_customer_sk":80911,"ws_ship_cdemo_sk":728755,"ws_ship_hdemo_sk":6049,"ws_ship_addr_sk":91444,"ws_web_page_sk":226,"ws_web_site_sk":10,"ws_ship_mode_sk":4,"ws_warehouse_sk":5,"ws_promo_sk":522,"ws_order_number":551477,"ws_quantity":77,"ws_wholesale_cost":40.7,"ws_list_price":94.01,"ws_sales_price":87.42,"ws_ext_discount_amt":507.43,"ws_ext_sales_price":6731.34,"ws_ext_wholesale_cost":3133.9,"ws_ext_list_price":7238.77,"ws_ext_tax":605.82,"ws_coupon_amt":0.0,"ws_ext_ship_cost":3474.24,"ws_net_paid":6731.34,"ws_net_paid_inc_tax":7337.16,"ws_net_paid_inc_ship":10205.58,"ws_net_paid_inc_ship_tax":10811.4,"ws_net_profit":3597.44}
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:518)
+	at org.apache.hadoop.hive.ql.exec.tez.MapRecordSource.processRow(MapRecordSource.java:83)
+	... 17 more
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Unexpected exception: java.io.IOException: No space left on device
+Serialization trace:
+fieldName (org.apache.hadoop.hive.serde2.BaseStructObjectInspector$MyField)
+fields (org.apache.hadoop.hive.serde2.lazy.objectinspector.LazySimpleStructObjectInspector)
+oi (org.apache.hadoop.hive.serde2.lazy.LazyStruct)
+	at org.apache.hadoop.hive.ql.exec.MapJoinOperator.process(MapJoinOperator.java:426)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:837)
+	at org.apache.hadoop.hive.ql.exec.FilterOperator.process(FilterOperator.java:122)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:837)
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.process(TableScanOperator.java:97)
+	at org.apache.hadoop.hive.ql.exec.MapOperator$MapOpCtx.forward(MapOperator.java:162)
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:508)
+	... 18 more
+Caused by: org.apache.hive.com.esotericsoftware.kryo.KryoException: java.io.IOException: No space left on device
+Serialization trace:
+fieldName (org.apache.hadoop.hive.serde2.BaseStructObjectInspector$MyField)
+fields (org.apache.hadoop.hive.serde2.lazy.objectinspector.LazySimpleStructObjectInspector)
+oi (org.apache.hadoop.hive.serde2.lazy.LazyStruct)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.flush(Output.java:163)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.require(Output.java:141)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.writeAscii_slow(Output.java:463)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.writeString(Output.java:323)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.DefaultSerializers$StringSerializer.write(DefaultSerializers.java:167)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.DefaultSerializers$StringSerializer.write(DefaultSerializers.java:160)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeObjectOrNull(Kryo.java:592)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.ObjectField.write(ObjectField.java:68)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.FieldSerializer.write(FieldSerializer.java:474)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeClassAndObject(Kryo.java:614)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.CollectionSerializer.write(CollectionSerializer.java:78)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.CollectionSerializer.write(CollectionSerializer.java:18)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeObject(Kryo.java:538)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.ObjectField.write(ObjectField.java:61)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.FieldSerializer.write(FieldSerializer.java:474)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeObject(Kryo.java:538)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.ObjectField.write(ObjectField.java:61)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.FieldSerializer.write(FieldSerializer.java:474)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeClassAndObject(Kryo.java:614)
+	at org.apache.hadoop.hive.ql.exec.persistence.ObjectContainer.add(ObjectContainer.java:104)
+	at org.apache.hadoop.hive.ql.exec.MapJoinOperator.spillBigTableRow(MapJoinOperator.java:440)
+	at org.apache.hadoop.hive.ql.exec.MapJoinOperator.process(MapJoinOperator.java:404)
+	... 24 more
+Caused by: java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.flush(Output.java:161)
+	... 45 more
+]], Vertex did not succeed due to OWN_TASK_FAILURE, failedTasks:1 killedTasks:20, Vertex vertex_1474574455816_0061_1_04 [Map 1] killed/failed due to:OWN_TASK_FAILURE]
+Vertex killed, vertexName=Reducer 6, vertexId=vertex_1474574455816_0061_1_12, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:1, Vertex vertex_1474574455816_0061_1_12 [Reducer 6] killed/failed due to:OTHER_VERTEX_FAILURE]
+Vertex killed, vertexName=Reducer 2, vertexId=vertex_1474574455816_0061_1_08, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:3, Vertex vertex_1474574455816_0061_1_08 [Reducer 2] killed/failed due to:OTHER_VERTEX_FAILURE]
+Vertex killed, vertexName=Reducer 3, vertexId=vertex_1474574455816_0061_1_09, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:3, Vertex vertex_1474574455816_0061_1_09 [Reducer 3] killed/failed due to:OTHER_VERTEX_FAILURE]
+Vertex killed, vertexName=Reducer 4, vertexId=vertex_1474574455816_0061_1_10, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:3, Vertex vertex_1474574455816_0061_1_10 [Reducer 4] killed/failed due to:OTHER_VERTEX_FAILURE]
+Vertex killed, vertexName=Reducer 5, vertexId=vertex_1474574455816_0061_1_11, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:1, Vertex vertex_1474574455816_0061_1_11 [Reducer 5] killed/failed due to:OTHER_VERTEX_FAILURE]
+DAG did not succeed due to VERTEX_FAILURE. failedVertices:1 killedVertices:5
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.tez.TezTask. Vertex failed, vertexName=Map 1, vertexId=vertex_1474574455816_0061_1_04, diagnostics=[Task failed, taskId=task_1474574455816_0061_1_04_000000, diagnostics=[TaskAttempt 3 failed, info=[Error: Failure while running task:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"ws_sold_date_sk":2451522,"ws_sold_time_sk":9822,"ws_ship_date_sk":2451532,"ws_item_sk":30757,"ws_bill_customer_sk":4032,"ws_bill_cdemo_sk":1611027,"ws_bill_hdemo_sk":2422,"ws_bill_addr_sk":259217,"ws_ship_customer_sk":80911,"ws_ship_cdemo_sk":728755,"ws_ship_hdemo_sk":6049,"ws_ship_addr_sk":91444,"ws_web_page_sk":226,"ws_web_site_sk":10,"ws_ship_mode_sk":4,"ws_warehouse_sk":5,"ws_promo_sk":522,"ws_order_number":551477,"ws_quantity":77,"ws_wholesale_cost":40.7,"ws_list_price":94.01,"ws_sales_price":87.42,"ws_ext_discount_amt":507.43,"ws_ext_sales_price":6731.34,"ws_ext_wholesale_cost":3133.9,"ws_ext_list_price":7238.77,"ws_ext_tax":605.82,"ws_coupon_amt":0.0,"ws_ext_ship_cost":3474.24,"ws_net_paid":6731.34,"ws_net_paid_inc_tax":7337.16,"ws_net_paid_inc_ship":10205.58,"ws_net_paid_inc_ship_tax":10811.4,"ws_net_profit":3597.44}
+	at org.apache.hadoop.hive.ql.exec.tez.TezProcessor.initializeAndRunProcessor(TezProcessor.java:171)
+	at org.apache.hadoop.hive.ql.exec.tez.TezProcessor.run(TezProcessor.java:137)
+	at org.apache.tez.runtime.LogicalIOProcessorRuntimeTask.run(LogicalIOProcessorRuntimeTask.java:346)
+	at org.apache.tez.runtime.task.TezTaskRunner$TaskRunnerCallable$1.run(TezTaskRunner.java:179)
+	at org.apache.tez.runtime.task.TezTaskRunner$TaskRunnerCallable$1.run(TezTaskRunner.java:171)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.tez.runtime.task.TezTaskRunner$TaskRunnerCallable.callInternal(TezTaskRunner.java:171)
+	at org.apache.tez.runtime.task.TezTaskRunner$TaskRunnerCallable.callInternal(TezTaskRunner.java:167)
+	at org.apache.tez.common.CallableWithNdc.call(CallableWithNdc.java:36)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"ws_sold_date_sk":2451522,"ws_sold_time_sk":9822,"ws_ship_date_sk":2451532,"ws_item_sk":30757,"ws_bill_customer_sk":4032,"ws_bill_cdemo_sk":1611027,"ws_bill_hdemo_sk":2422,"ws_bill_addr_sk":259217,"ws_ship_customer_sk":80911,"ws_ship_cdemo_sk":728755,"ws_ship_hdemo_sk":6049,"ws_ship_addr_sk":91444,"ws_web_page_sk":226,"ws_web_site_sk":10,"ws_ship_mode_sk":4,"ws_warehouse_sk":5,"ws_promo_sk":522,"ws_order_number":551477,"ws_quantity":77,"ws_wholesale_cost":40.7,"ws_list_price":94.01,"ws_sales_price":87.42,"ws_ext_discount_amt":507.43,"ws_ext_sales_price":6731.34,"ws_ext_wholesale_cost":3133.9,"ws_ext_list_price":7238.77,"ws_ext_tax":605.82,"ws_coupon_amt":0.0,"ws_ext_ship_cost":3474.24,"ws_net_paid":6731.34,"ws_net_paid_inc_tax":7337.16,"ws_net_paid_inc_ship":10205.58,"ws_net_paid_inc_ship_tax":10811.4,"ws_net_profit":3597.44}
+	at org.apache.hadoop.hive.ql.exec.tez.MapRecordSource.processRow(MapRecordSource.java:91)
+	at org.apache.hadoop.hive.ql.exec.tez.MapRecordSource.pushRecord(MapRecordSource.java:68)
+	at org.apache.hadoop.hive.ql.exec.tez.MapRecordProcessor.run(MapRecordProcessor.java:290)
+	at org.apache.hadoop.hive.ql.exec.tez.TezProcessor.initializeAndRunProcessor(TezProcessor.java:148)
+	... 14 more
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"ws_sold_date_sk":2451522,"ws_sold_time_sk":9822,"ws_ship_date_sk":2451532,"ws_item_sk":30757,"ws_bill_customer_sk":4032,"ws_bill_cdemo_sk":1611027,"ws_bill_hdemo_sk":2422,"ws_bill_addr_sk":259217,"ws_ship_customer_sk":80911,"ws_ship_cdemo_sk":728755,"ws_ship_hdemo_sk":6049,"ws_ship_addr_sk":91444,"ws_web_page_sk":226,"ws_web_site_sk":10,"ws_ship_mode_sk":4,"ws_warehouse_sk":5,"ws_promo_sk":522,"ws_order_number":551477,"ws_quantity":77,"ws_wholesale_cost":40.7,"ws_list_price":94.01,"ws_sales_price":87.42,"ws_ext_discount_amt":507.43,"ws_ext_sales_price":6731.34,"ws_ext_wholesale_cost":3133.9,"ws_ext_list_price":7238.77,"ws_ext_tax":605.82,"ws_coupon_amt":0.0,"ws_ext_ship_cost":3474.24,"ws_net_paid":6731.34,"ws_net_paid_inc_tax":7337.16,"ws_net_paid_inc_ship":10205.58,"ws_net_paid_inc_ship_tax":10811.4,"ws_net_profit":3597.44}
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:518)
+	at org.apache.hadoop.hive.ql.exec.tez.MapRecordSource.processRow(MapRecordSource.java:83)
+	... 17 more
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Unexpected exception: java.io.IOException: No space left on device
+Serialization trace:
+fieldName (org.apache.hadoop.hive.serde2.BaseStructObjectInspector$MyField)
+fields (org.apache.hadoop.hive.serde2.lazy.objectinspector.LazySimpleStructObjectInspector)
+oi (org.apache.hadoop.hive.serde2.lazy.LazyStruct)
+	at org.apache.hadoop.hive.ql.exec.MapJoinOperator.process(MapJoinOperator.java:426)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:837)
+	at org.apache.hadoop.hive.ql.exec.FilterOperator.process(FilterOperator.java:122)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:837)
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.process(TableScanOperator.java:97)
+	at org.apache.hadoop.hive.ql.exec.MapOperator$MapOpCtx.forward(MapOperator.java:162)
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:508)
+	... 18 more
+Caused by: org.apache.hive.com.esotericsoftware.kryo.KryoException: java.io.IOException: No space left on device
+Serialization trace:
+fieldName (org.apache.hadoop.hive.serde2.BaseStructObjectInspector$MyField)
+fields (org.apache.hadoop.hive.serde2.lazy.objectinspector.LazySimpleStructObjectInspector)
+oi (org.apache.hadoop.hive.serde2.lazy.LazyStruct)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.flush(Output.java:163)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.require(Output.java:141)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.writeAscii_slow(Output.java:463)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.writeString(Output.java:323)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.DefaultSerializers$StringSerializer.write(DefaultSerializers.java:167)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.DefaultSerializers$StringSerializer.write(DefaultSerializers.java:160)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeObjectOrNull(Kryo.java:592)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.ObjectField.write(ObjectField.java:68)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.FieldSerializer.write(FieldSerializer.java:474)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeClassAndObject(Kryo.java:614)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.CollectionSerializer.write(CollectionSerializer.java:78)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.CollectionSerializer.write(CollectionSerializer.java:18)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeObject(Kryo.java:538)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.ObjectField.write(ObjectField.java:61)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.FieldSerializer.write(FieldSerializer.java:474)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeObject(Kryo.java:538)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.ObjectField.write(ObjectField.java:61)
+	at org.apache.hive.com.esotericsoftware.kryo.serializers.FieldSerializer.write(FieldSerializer.java:474)
+	at org.apache.hive.com.esotericsoftware.kryo.Kryo.writeClassAndObject(Kryo.java:614)
+	at org.apache.hadoop.hive.ql.exec.persistence.ObjectContainer.add(ObjectContainer.java:104)
+	at org.apache.hadoop.hive.ql.exec.MapJoinOperator.spillBigTableRow(MapJoinOperator.java:440)
+	at org.apache.hadoop.hive.ql.exec.MapJoinOperator.process(MapJoinOperator.java:404)
+	... 24 more
+Caused by: java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at org.apache.hive.com.esotericsoftware.kryo.io.Output.flush(Output.java:161)
+	... 45 more
+]], Vertex did not succeed due to OWN_TASK_FAILURE, failedTasks:1 killedTasks:20, Vertex vertex_1474574455816_0061_1_04 [Map 1] killed/failed due to:OWN_TASK_FAILURE]Vertex killed, vertexName=Reducer 6, vertexId=vertex_1474574455816_0061_1_12, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:1, Vertex vertex_1474574455816_0061_1_12 [Reducer 6] killed/failed due to:OTHER_VERTEX_FAILURE]Vertex killed, vertexName=Reducer 2, vertexId=vertex_1474574455816_0061_1_08, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:3, Vertex vertex_1474574455816_0061_1_08 [Reducer 2] killed/failed due to:OTHER_VERTEX_FAILURE]Vertex killed, vertexName=Reducer 3, vertexId=vertex_1474574455816_0061_1_09, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:3, Vertex vertex_1474574455816_0061_1_09 [Reducer 3] killed/failed due to:OTHER_VERTEX_FAILURE]Vertex killed, vertexName=Reducer 4, vertexId=vertex_1474574455816_0061_1_10, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:3, Vertex vertex_1474574455816_0061_1_10 [Reducer 4] killed/failed due to:OTHER_VERTEX_FAILURE]Vertex killed, vertexName=Reducer 5, vertexId=vertex_1474574455816_0061_1_11, diagnostics=[Vertex received Kill while in RUNNING state., Vertex did not succeed due to OTHER_VERTEX_FAILURE, failedTasks:0 killedTasks:1, Vertex vertex_1474574455816_0061_1_11 [Reducer 5] killed/failed due to:OTHER_VERTEX_FAILURE]DAG did not succeed due to VERTEX_FAILURE. failedVertices:1 killedVertices:5
+Command exited with non-zero status 2
+18.53user 1.05system 6:28.91elapsed 5%CPU (0avgtext+0avgdata 737340maxresident)k
+0inputs+2048outputs (0major+86776minor)pagefaults 0swaps
