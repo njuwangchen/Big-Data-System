@@ -1,0 +1,23 @@
+total_tasks: 22
+task_1474574455816_0027_m_000000: {'finishTime': 1474585364553, 'status': u'SUCCEEDED', 'startTime': 1474585358844, 'taskType': u'MAP'}
+task_1474574455816_0023_m_000003: {'finishTime': 1474585249365, 'status': u'SUCCEEDED', 'startTime': 1474585199695, 'taskType': u'MAP'}
+task_1474574455816_0024_m_000009: {'finishTime': 1474585284904, 'status': u'SUCCEEDED', 'startTime': 1474585272289, 'taskType': u'MAP'}
+task_1474574455816_0024_m_000008: {'finishTime': 1474585294968, 'status': u'SUCCEEDED', 'startTime': 1474585272288, 'taskType': u'MAP'}
+task_1474574455816_0024_m_000007: {'finishTime': 1474585294343, 'status': u'SUCCEEDED', 'startTime': 1474585272288, 'taskType': u'MAP'}
+task_1474574455816_0024_m_000006: {'finishTime': 1474585295042, 'status': u'SUCCEEDED', 'startTime': 1474585272288, 'taskType': u'MAP'}
+task_1474574455816_0024_m_000005: {'finishTime': 1474585296234, 'status': u'SUCCEEDED', 'startTime': 1474585272288, 'taskType': u'MAP'}
+task_1474574455816_0024_m_000004: {'finishTime': 1474585295674, 'status': u'SUCCEEDED', 'startTime': 1474585272287, 'taskType': u'MAP'}
+task_1474574455816_0025_m_000000: {'finishTime': 1474585330980, 'status': u'SUCCEEDED', 'startTime': 1474585318493, 'taskType': u'MAP'}
+task_1474574455816_0025_m_000001: {'finishTime': 1474585329616, 'status': u'SUCCEEDED', 'startTime': 1474585318501, 'taskType': u'MAP'}
+task_1474574455816_0025_m_000002: {'finishTime': 1474585327685, 'status': u'SUCCEEDED', 'startTime': 1474585318502, 'taskType': u'MAP'}
+task_1474574455816_0023_m_000001: {'finishTime': 1474585258222, 'status': u'SUCCEEDED', 'startTime': 1474585199695, 'taskType': u'MAP'}
+task_1474574455816_0024_m_000003: {'finishTime': 1474585294781, 'status': u'SUCCEEDED', 'startTime': 1474585272287, 'taskType': u'MAP'}
+task_1474574455816_0026_m_000000: {'finishTime': 1474585344783, 'status': u'SUCCEEDED', 'startTime': 1474585338739, 'taskType': u'MAP'}
+task_1474574455816_0027_r_000000: {'finishTime': 1474585370051, 'status': u'SUCCEEDED', 'startTime': 1474585358850, 'taskType': u'REDUCE'}
+task_1474574455816_0023_m_000000: {'finishTime': 1474585256771, 'status': u'SUCCEEDED', 'startTime': 1474585199688, 'taskType': u'MAP'}
+task_1474574455816_0024_m_000001: {'finishTime': 1474585302169, 'status': u'SUCCEEDED', 'startTime': 1474585272286, 'taskType': u'MAP'}
+task_1474574455816_0023_m_000004: {'finishTime': 1474585240827, 'status': u'SUCCEEDED', 'startTime': 1474585199696, 'taskType': u'MAP'}
+task_1474574455816_0024_m_000000: {'finishTime': 1474585297180, 'status': u'SUCCEEDED', 'startTime': 1474585272280, 'taskType': u'MAP'}
+task_1474574455816_0026_r_000000: {'finishTime': 1474585351780, 'status': u'SUCCEEDED', 'startTime': 1474585338745, 'taskType': u'REDUCE'}
+task_1474574455816_0024_m_000002: {'finishTime': 1474585295187, 'status': u'SUCCEEDED', 'startTime': 1474585272287, 'taskType': u'MAP'}
+task_1474574455816_0023_m_000002: {'finishTime': 1474585253280, 'status': u'SUCCEEDED', 'startTime': 1474585199695, 'taskType': u'MAP'}
