@@ -1,0 +1,43 @@
+query:12 reducers:1 shuffle:10 slow:0 time:180.678 
+query:12 reducers:1 shuffle:10 slow:0 time:175.41 
+query:12 reducers:1 shuffle:5 slow:1 round:1 time:159.572 
+query:12 reducers:1 shuffle:5 slow:1 round:2 time:175.545 
+query:12 reducers:1 shuffle:5 slow:1 round:3 time:155.768 
+query:21 reducers:1 shuffle:10 slow:0 time:184.244 
+query:21 reducers:10 shuffle:5 slow:1 round:3 time:195.075 
+query:21 reducers:1 shuffle:10 slow:0 time:188.124 
+query:21 reducers:5 shuffle:5 slow:1 round:4 time:190.902 
+query:21 reducers:1 shuffle:5 slow:1 round:3 time:184.912 
+query:21 reducers:1 shuffle:15 slow:1 round:3 time:186.529 
+query:21 reducers:1 shuffle:10 slow:0 time:197.024 
+query:21 reducers:1 shuffle:10 slow:0 time:184.282 
+query:21 reducers:20 shuffle:5 slow:1 round:1 time:189.053 
+query:21 reducers:5 shuffle:5 slow:1 round:1 time:188.142 
+query:21 reducers:1 shuffle:10 slow:0 time:185.772 
+query:21 reducers:5 shuffle:5 slow:1 round:5 time:195.896 
+query:21 reducers:1 shuffle:5 slow:1 round:4 time:187.56 
+query:21 reducers:1 shuffle:10 slow:1 round:1 time:184.132 
+query:21 reducers:1 shuffle:20 slow:1 round:1 time:179.517 
+query:21 reducers:1 shuffle:10 slow:0 time:178.418 
+query:21 reducers:10 shuffle:5 slow:1 round:1 time:191.148 
+query:21 reducers:20 shuffle:5 slow:1 round:2 time:193.686 
+query:21 reducers:5 shuffle:5 slow:1 round:2 time:182.536 
+query:21 reducers:1 shuffle:10 slow:0 time:188.661 
+query:21 reducers:1 shuffle:5 slow:1 round:1 time:187.341 
+query:21 reducers:1 shuffle:5 slow:1 round:5 time:179.075 
+query:21 reducers:1 shuffle:15 slow:1 round:1 time:180.388 
+query:21 reducers:1 shuffle:10 slow:1 round:2 time:178.669 
+query:21 reducers:1 shuffle:20 slow:1 round:2 time:189.854 
+query:21 reducers:1 shuffle:10 slow:0 time:186.568 
+query:21 reducers:1 shuffle:10 slow:0 time:177.879 
+query:21 reducers:10 shuffle:5 slow:1 round:2 time:184.797 
+query:21 reducers:1 shuffle:10 slow:0 time:184.103 
+query:21 reducers:20 shuffle:5 slow:1 round:3 time:204.057 
+query:21 reducers:5 shuffle:5 slow:1 round:3 time:184.03 
+query:21 reducers:1 shuffle:10 slow:0 time:182.686 
+query:21 reducers:1 shuffle:5 slow:1 round:2 time:182.575 
+query:21 reducers:1 shuffle:15 slow:1 round:2 time:191.849 
+query:21 reducers:1 shuffle:10 slow:1 round:3 time:188.675 
+query:21 reducers:1 shuffle:20 slow:1 round:3 time:196.011 
+query:21 reducers:1 shuffle:10 slow:0 time:182.384 
+query:50 reducers:1 shuffle:10 slow:0 time:571.969 

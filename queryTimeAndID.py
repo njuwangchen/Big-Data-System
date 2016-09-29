@@ -4,8 +4,11 @@ import shutil
 data_file_root = '/afs/cs.wisc.edu/u/c/h/chenwang/838'
 hadoop_history_root = data_file_root + '/hadoop-history'
 tez_history_root = data_file_root + '/tez-history'
+output_root = data_file_root + '/output'
 
 def processMRFile(filename, queries, query_id_dict, query_completion_time):
+    cwd = os.getcwd()
+    filename = output_root + '/' + filename
     for q_num in queries:
         filename_new = filename+str(q_num)+'_mr.out'
         with open(filename_new) as mr_file:
@@ -22,17 +25,20 @@ def processMRFile(filename, queries, query_id_dict, query_completion_time):
                 if line.startswith('Starting Job'):
                     job_id = line.split(' ')[3][:-1]
                     query_id_dict[q_num].append(job_id)
+    os.chdir(cwd)
 
-def writeResult(prefix, query_id_dict, query_completion_time):
-    with open(prefix + '_query_job_id', 'w') as job_id_file:
+def writeResult(prefix, query_id_dict, query_completion_time, write_path):
+    with open(write_path + '/' + prefix + '_query_job_id', 'w') as job_id_file:
         for query_id in query_id_dict:
             job_id_file.write(str(query_id) + ': ' + str(query_id_dict[query_id]) + '\n')
 
-    with open(prefix + '_query_completion_time', 'w') as query_completion_file:
+    with open(write_path + '/' + prefix + '_query_completion_time', 'w') as query_completion_file:
         for query_id in query_completion_time:
             query_completion_file.write(str(query_id) + ': ' + str(query_completion_time[query_id]) + '\n')
 
 def processTezFile(filename, queries, query_id_dict, query_completion_time):
+    cwd = os.getcwd()
+    filename = output_root + '/' + filename
     for q_num in queries:
         filename_new = filename+str(q_num)+'_tez.out'
         with open(filename_new) as tez_file:
@@ -49,6 +55,7 @@ def processTezFile(filename, queries, query_id_dict, query_completion_time):
                 if line.startswith('Status:'):
                     job_id = line.split(' ')[-1][:-2]
                     query_id_dict[q_num].append(job_id)
+    os.chdir(cwd)
 
 def collectHistoryFiles(prefix, query_id_dict):
     cwd = os.getcwd()
@@ -84,17 +91,17 @@ def collectHistoryFiles(prefix, query_id_dict):
     os.chdir(cwd)
 
 if __name__ == '__main__':
-    filename = 'queryTimeAndID/tpcds_query'
+    filename = 'outputq1/tpcds_query'
     query_id_dict = {}
     query_completion_time = {}
     queries = [12, 21, 50, 71, 85]
     processMRFile(filename, queries, query_id_dict, query_completion_time)
-    writeResult('mr', query_id_dict, query_completion_time)
+    writeResult('mr', query_id_dict, query_completion_time, 'result/1')
 
     tez_query_id_dict = {}
     tez_query_completion_time = {}
     processTezFile(filename, queries, tez_query_id_dict, tez_query_completion_time)
-    writeResult('tez', tez_query_id_dict, tez_query_completion_time)
+    writeResult('tez', tez_query_id_dict, tez_query_completion_time, 'result/1')
 
     mr_history_path = 'mr_history'
     if os.path.exists(mr_history_path):
