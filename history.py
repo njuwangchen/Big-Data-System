@@ -130,3 +130,7 @@ def processTez():
 if __name__ == '__main__':
     processMR()
     processTez()
+
+    os.chdir('result/3')
+    processMR()
+    processTez()

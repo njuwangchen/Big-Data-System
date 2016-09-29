@@ -57,16 +57,57 @@ def processTezFile(filename, queries, query_id_dict, query_completion_time):
                     query_id_dict[q_num].append(job_id)
     os.chdir(cwd)
 
-def collectHistoryFiles(prefix, query_id_dict):
+def collectHistoryFilesFor3(output3path):
+    cwd = os.getcwd()
+    path = output_root+'/'+output3path
+    result_path = cwd + '/result/3'
+    os.chdir(path)
+    files = os.listdir(path)
+    for file in files:
+        if os.path.isfile(file):
+            file_name = file[:file.index('.')]
+            print file_name
+            file_name_array = file_name.split('_')
+            query = file_name_array[1]
+
+            # what is the query with no query number?
+            if len(query) < 7:
+                continue
+
+            query_num = int(query[-2:])
+            query_type = file_name_array[2]
+
+            query_id_dict = {}
+            query_id_dict[query_num] = []
+            with open(file) as data:
+                lines = data.readlines()
+                for line in lines:
+                    if query_type == 'mr':
+                        if line.startswith('Starting Job'):
+                            job_id = line.split(' ')[3][:-1]
+                            query_id_dict[query_num].append(job_id)
+                    if query_type == 'tez':
+                        if line.startswith('Status:'):
+                            job_id = line.split(' ')[-1][:-2]
+                            query_id_dict[query_num].append(job_id)
+            cwd_tmp = os.getcwd()
+            os.chdir(result_path)
+            collectHistoryFiles(query_type, query_id_dict, True, file_name)
+            os.chdir(cwd_tmp)
+    os.chdir(cwd)
+
+def collectHistoryFiles(prefix, query_id_dict, is3rd, name3rd):
     cwd = os.getcwd()
     print cwd
     if prefix == 'mr':
         cwd_his = cwd + '/mr_history'
-        os.mkdir(cwd_his)
+        if not os.path.exists(cwd_his):
+            os.mkdir(cwd_his)
         os.chdir(hadoop_history_root)
     elif prefix == 'tez':
         cwd_his = cwd + '/tez_history'
-        os.mkdir(cwd_his)
+        if not os.path.exists(cwd_his):
+            os.mkdir(cwd_his)
         os.chdir(tez_history_root)
     else:
         print "error collect history!"
@@ -74,8 +115,13 @@ def collectHistoryFiles(prefix, query_id_dict):
     print os.getcwd()
     for query_id in query_id_dict:
         print query_id
-        history_path = cwd_his + '/' +str(query_id)
-        os.mkdir(history_path)
+        if not is3rd:
+            history_path = cwd_his + '/' +str(query_id)
+            os.mkdir(history_path)
+        else:
+            history_path = cwd_his + '/' + name3rd
+            os.mkdir(history_path)
+
         ids = query_id_dict[query_id]
         for dirpath, dirname, filenames in os.walk(os.getcwd()):
             for filename in filenames:
@@ -109,5 +155,13 @@ if __name__ == '__main__':
     tez_history_path = 'tez_history'
     if os.path.exists(tez_history_path):
         shutil.rmtree(tez_history_path)
-    collectHistoryFiles('mr', query_id_dict)
-    collectHistoryFiles('tez', tez_query_id_dict)
+    collectHistoryFiles('mr', query_id_dict, False, '')
+    collectHistoryFiles('tez', tez_query_id_dict, False, '')
+
+    if os.path.exists('result/3/'+mr_history_path):
+        shutil.rmtree('result/3/'+mr_history_path)
+    if os.path.exists('result/3/'+tez_history_path):
+        shutil.rmtree('result/3/'+tez_history_path)
+    collectHistoryFilesFor3('outputq3')
+
+
