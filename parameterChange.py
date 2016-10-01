@@ -11,7 +11,7 @@ def processParameterFiles(my_dir, mr_result, tez_result):
     files = os.listdir(path)
     for file in files:
         if os.path.isfile(file):
-            file_name = file[:file.index('.')]
+            file_name = file[:file.rindex('.')]
             print file_name
             file_name_array = file_name.split('_')
             query = file_name_array[1]
@@ -26,7 +26,7 @@ def processParameterFiles(my_dir, mr_result, tez_result):
             item = OrderedDict()
             item['query'] = query_num
             for i in range(3, len(file_name_array)-1, 2):
-                item[file_name_array[i]] = int(file_name_array[i+1])
+                item[file_name_array[i]] = file_name_array[i+1]
 
             with open(file) as data:
                 lines = data.readlines()
