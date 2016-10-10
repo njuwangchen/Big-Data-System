@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.4)  1 OCT 2016 22:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.16)  3 OCT 2016 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -139,35 +139,43 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count103
 \@lastruleclass=\count104
 \@thisrulewidth=\dimen126
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count105
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
 ) (./parta.aux)
 \openout1 = `parta.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
+\scratchcounter=\count106
 \scratchdimen=\dimen127
-\scratchbox=\box28
-\nofMPsegments=\count106
-\nofMParguments=\count107
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count108
+\scratchbox=\box30
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count109
 \MPscratchDim=\dimen128
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks21
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -216,6 +224,11 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Overfull \hbox (13.05508pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/n/10 We run query 12, 21, 50, 71 and 85 of TPC-DS bench-mark set wit
+h Hive/Mapreduce
+ []
+
 Package epstopdf Info: Source file: <pic/q1a_time.eps>
 (epstopdf)                    date: 2016-09-30 11:25:24
 (epstopdf)                    size: 17249 bytes
@@ -224,52 +237,55 @@ Package epstopdf Info: Source file: <pic/q1a_time.eps>
 (epstopdf)                    size: 7232 bytes
 (epstopdf)             Command: <repstopdf --outfile=pic/q1a_time-eps-converted
 -to.pdf pic/q1a_time.eps>
-(epstopdf)             \includegraphics on input line 48.
+(epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
-
 <pic/q1a_time-eps-converted-to.pdf, id=1, 421.575pt x 316.18124pt>
 File: pic/q1a_time-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pic/q1a_time-eps-converted-to.pdf>
 Package pdftex.def Info: pic/q1a_time-eps-converted-to.pdf used on input line 4
-8.
+7.
 (pdftex.def)             Requested size: 258.75pt x 194.06676pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package epstopdf Info: Source file: <pic/q1b_net.eps>
-(epstopdf)                    date: 2016-10-01 11:36:41
-(epstopdf)                    size: 20861 bytes
+(epstopdf)                    date: 2016-10-03 19:35:41
+(epstopdf)                    size: 20766 bytes
 (epstopdf)             Output file: <pic/q1b_net-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-01 13:20:52
-(epstopdf)                    size: 8043 bytes
+(epstopdf)                    date: 2016-10-03 19:36:16
+(epstopdf)                    size: 7977 bytes
 (epstopdf)             Command: <repstopdf --outfile=pic/q1b_net-eps-converted-
 to.pdf pic/q1b_net.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
-
-<pic/q1b_net-eps-converted-to.pdf, id=2, 429.605pt x 318.18875pt>
+ <pic/q1b_net-eps-converted-to.pdf, id=11, 449.68pt x 345.29pt>
 File: pic/q1b_net-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pic/q1b_net-eps-converted-to.pdf>
 Package pdftex.def Info: pic/q1b_net-eps-converted-to.pdf used on input line 59
 .
-(pdftex.def)             Requested size: 258.75pt x 191.64784pt.
+(pdftex.def)             Requested size: 258.75pt x 198.693pt.
 Package epstopdf Info: Source file: <pic/q1b_disk.eps>
-(epstopdf)                    date: 2016-09-30 12:51:19
+(epstopdf)                    date: 2016-10-02 19:47:56
 (epstopdf)                    size: 21427 bytes
 (epstopdf)             Output file: <pic/q1b_disk-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-01 13:20:52
+(epstopdf)                    date: 2016-10-02 21:43:50
 (epstopdf)                    size: 8239 bytes
 (epstopdf)             Command: <repstopdf --outfile=pic/q1b_disk-eps-converted
 -to.pdf pic/q1b_disk.eps>
 (epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
 
-<pic/q1b_disk-eps-converted-to.pdf, id=3, 421.575pt x 316.18124pt>
+<pic/q1b_disk-eps-converted-to.pdf, id=12, 421.575pt x 316.18124pt>
 File: pic/q1b_disk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pic/q1b_disk-eps-converted-to.pdf>
 Package pdftex.def Info: pic/q1b_disk-eps-converted-to.pdf used on input line 6
 9.
 (pdftex.def)             Requested size: 258.75pt x 194.06676pt.
+ [2 <./pic/q1a_time-eps-converted-to.pdf>] [3 <./pic/q1b_net-eps-converted-to.p
+df> <./pic/q1b_disk-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <pic/q1c_task_distribution_12.eps>
 (epstopdf)                    date: 2016-10-01 12:42:03
 (epstopdf)                    size: 120162 bytes
@@ -279,16 +295,16 @@ Package epstopdf Info: Source file: <pic/q1c_task_distribution_12.eps>
 (epstopdf)                    size: 8894 bytes
 (epstopdf)             Command: <repstopdf --outfile=pic/q1c_task_distribution_
 12-eps-converted-to.pdf pic/q1c_task_distribution_12.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 
-<pic/q1c_task_distribution_12-eps-converted-to.pdf, id=4, 421.575pt x 316.18124
-pt>
+<pic/q1c_task_distribution_12-eps-converted-to.pdf, id=34, 421.575pt x 316.1812
+4pt>
 File: pic/q1c_task_distribution_12-eps-converted-to.pdf Graphic file (type pdf)
 
  <use pic/q1c_task_distribution_12-eps-converted-to.pdf>
 Package pdftex.def Info: pic/q1c_task_distribution_12-eps-converted-to.pdf used
- on input line 79.
+ on input line 119.
 (pdftex.def)             Requested size: 258.75pt x 194.06676pt.
 Package epstopdf Info: Source file: <pic/q1c_task_distribution_21.eps>
 (epstopdf)                    date: 2016-10-01 12:48:00
@@ -299,16 +315,16 @@ Package epstopdf Info: Source file: <pic/q1c_task_distribution_21.eps>
 (epstopdf)                    size: 8244 bytes
 (epstopdf)             Command: <repstopdf --outfile=pic/q1c_task_distribution_
 21-eps-converted-to.pdf pic/q1c_task_distribution_21.eps>
-(epstopdf)             \includegraphics on input line 87.
+(epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<pic/q1c_task_distribution_21-eps-converted-to.pdf, id=5, 421.575pt x 316.18124
-pt>
+<pic/q1c_task_distribution_21-eps-converted-to.pdf, id=35, 421.575pt x 316.1812
+4pt>
 File: pic/q1c_task_distribution_21-eps-converted-to.pdf Graphic file (type pdf)
 
  <use pic/q1c_task_distribution_21-eps-converted-to.pdf>
 Package pdftex.def Info: pic/q1c_task_distribution_21-eps-converted-to.pdf used
- on input line 87.
+ on input line 129.
 (pdftex.def)             Requested size: 258.75pt x 194.06676pt.
 Package epstopdf Info: Source file: <pic/q1c_task_distribution_50.eps>
 (epstopdf)                    date: 2016-10-01 12:43:09
@@ -319,17 +335,19 @@ Package epstopdf Info: Source file: <pic/q1c_task_distribution_50.eps>
 (epstopdf)                    size: 10855 bytes
 (epstopdf)             Command: <repstopdf --outfile=pic/q1c_task_distribution_
 50-eps-converted-to.pdf pic/q1c_task_distribution_50.eps>
-(epstopdf)             \includegraphics on input line 95.
+(epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
 
-<pic/q1c_task_distribution_50-eps-converted-to.pdf, id=6, 421.575pt x 316.18124
-pt>
+<pic/q1c_task_distribution_50-eps-converted-to.pdf, id=36, 421.575pt x 316.1812
+4pt>
 File: pic/q1c_task_distribution_50-eps-converted-to.pdf Graphic file (type pdf)
 
  <use pic/q1c_task_distribution_50-eps-converted-to.pdf>
 Package pdftex.def Info: pic/q1c_task_distribution_50-eps-converted-to.pdf used
- on input line 95.
+ on input line 139.
 (pdftex.def)             Requested size: 258.75pt x 194.06676pt.
+ [4] [5 <./pic/q1c_task_distribution_12-eps-converted-to.pdf> <./pic/q1c_task_d
+istribution_21-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <pic/q1c_task_distribution_71.eps>
 (epstopdf)                    date: 2016-10-01 12:42:48
 (epstopdf)                    size: 135687 bytes
@@ -339,16 +357,16 @@ Package epstopdf Info: Source file: <pic/q1c_task_distribution_71.eps>
 (epstopdf)                    size: 11426 bytes
 (epstopdf)             Command: <repstopdf --outfile=pic/q1c_task_distribution_
 71-eps-converted-to.pdf pic/q1c_task_distribution_71.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 149.
 Package epstopdf Info: Output file is already uptodate.
 
-<pic/q1c_task_distribution_71-eps-converted-to.pdf, id=7, 421.575pt x 316.18124
-pt>
+<pic/q1c_task_distribution_71-eps-converted-to.pdf, id=53, 421.575pt x 316.1812
+4pt>
 File: pic/q1c_task_distribution_71-eps-converted-to.pdf Graphic file (type pdf)
 
  <use pic/q1c_task_distribution_71-eps-converted-to.pdf>
 Package pdftex.def Info: pic/q1c_task_distribution_71-eps-converted-to.pdf used
- on input line 103.
+ on input line 149.
 (pdftex.def)             Requested size: 258.75pt x 194.06676pt.
 Package epstopdf Info: Source file: <pic/q1c_task_distribution_85.eps>
 (epstopdf)                    date: 2016-10-01 12:42:37
@@ -359,62 +377,113 @@ Package epstopdf Info: Source file: <pic/q1c_task_distribution_85.eps>
 (epstopdf)                    size: 12917 bytes
 (epstopdf)             Command: <repstopdf --outfile=pic/q1c_task_distribution_
 85-eps-converted-to.pdf pic/q1c_task_distribution_85.eps>
-(epstopdf)             \includegraphics on input line 111.
+(epstopdf)             \includegraphics on input line 158.
 Package epstopdf Info: Output file is already uptodate.
 
-<pic/q1c_task_distribution_85-eps-converted-to.pdf, id=8, 421.575pt x 316.18124
-pt>
+<pic/q1c_task_distribution_85-eps-converted-to.pdf, id=54, 421.575pt x 316.1812
+4pt>
 File: pic/q1c_task_distribution_85-eps-converted-to.pdf Graphic file (type pdf)
 
  <use pic/q1c_task_distribution_85-eps-converted-to.pdf>
 Package pdftex.def Info: pic/q1c_task_distribution_85-eps-converted-to.pdf used
- on input line 111.
+ on input line 158.
 (pdftex.def)             Requested size: 258.75pt x 194.06676pt.
+ [6 <./pic/q1c_task_distribution_50-eps-converted-to.pdf>] [7 <./pic/q1c_task_d
+istribution_71-eps-converted-to.pdf> <./pic/q1c_task_distribution_85-eps-conver
+ted-to.pdf>]
+<pic/dag_mr_12.png, id=77, 119.4864pt x 688.4922pt>
+File: pic/dag_mr_12.png Graphic file (type png)
+ <use pic/dag_mr_12.png>
+Package pdftex.def Info: pic/dag_mr_12.png used on input line 174.
+(pdftex.def)             Requested size: 35.3296pt x 203.56567pt.
 
-<pic/dag_tez_query12.png, id=9, 1161.33875pt x 950.55125pt>
-File: pic/dag_tez_query12.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\OT1/cmr/m/n/10 Figure 9: Di-rected
+ []
 
-<use pic/dag_tez_query12.png>
-Package pdftex.def Info: pic/dag_tez_query12.png used on input line 122.
-(pdftex.def)             Requested size: 293.2521pt x 240.03043pt.
+<pic/dag_mr_21.png, id=78, 119.0046pt x 688.4922pt>
+File: pic/dag_mr_21.png Graphic file (type png)
+ <use pic/dag_mr_21.png>
+Package pdftex.def Info: pic/dag_mr_21.png used on input line 180.
+(pdftex.def)             Requested size: 35.3296pt x 204.39561pt.
 
-<pic/dag_tez_query21.png, id=11, 1175.39125pt x 799.98875pt>
-File: pic/dag_tez_query21.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
+[]\OT1/cmr/m/n/10 Figure 10: Di-rected
+ []
 
-<use pic/dag_tez_query21.png>
-Package pdftex.def Info: pic/dag_tez_query21.png used on input line 130.
-(pdftex.def)             Requested size: 293.2521pt x 199.59387pt.
+<pic/dag_mr_50.png, id=79, 119.4864pt x 736.6722pt>
+File: pic/dag_mr_50.png Graphic file (type png)
+ <use pic/dag_mr_50.png>
+Package pdftex.def Info: pic/dag_mr_50.png used on input line 186.
+(pdftex.def)             Requested size: 35.3296pt x 217.811pt.
 
-<pic/dag_tez_query50.png, id=12, 1516.66624pt x 799.98875pt>
-File: pic/dag_tez_query50.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[]\OT1/cmr/m/n/10 Figure 11: Di-rected
+ []
 
-<use pic/dag_tez_query50.png>
-Package pdftex.def Info: pic/dag_tez_query50.png used on input line 138.
-(pdftex.def)             Requested size: 293.2521pt x 154.67273pt.
+<pic/dag_mr_71.png, id=80, 358.941pt x 621.522pt>
+File: pic/dag_mr_71.png Graphic file (type png)
+ <use pic/dag_mr_71.png>
+Package pdftex.def Info: pic/dag_mr_71.png used on input line 196.
+(pdftex.def)             Requested size: 99.36012pt x 172.0429pt.
 
-<pic/dag_tez_query71.png, id=13, 2602.72375pt x 799.98875pt>
-File: pic/dag_tez_query71.png Graphic file (type png)
+<pic/dag_mr_85.png, id=81, 291.0072pt x 555.0336pt>
+File: pic/dag_mr_85.png Graphic file (type png)
+ <use pic/dag_mr_85.png>
+Package pdftex.def Info: pic/dag_mr_85.png used on input line 202.
+(pdftex.def)             Requested size: 99.36012pt x 189.50502pt.
 
-<use pic/dag_tez_query71.png>
-Package pdftex.def Info: pic/dag_tez_query71.png used on input line 146.
-(pdftex.def)             Requested size: 293.2521pt x 90.13522pt.
+<pic/dag_tez_12.png, id=82, 311.7246pt x 463.0098pt>
+File: pic/dag_tez_12.png Graphic file (type png)
+ <use pic/dag_tez_12.png>
+Package pdftex.def Info: pic/dag_tez_12.png used on input line 212.
+(pdftex.def)             Requested size: 73.31302pt x 108.89209pt.
 
-<pic/dag_tez_query85.png, id=14, 1485.55pt x 1249.66875pt>
-File: pic/dag_tez_query85.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+\OT1/cmr/m/n/10 Acyclic Graph
+ []
 
-<use pic/dag_tez_query85.png>
-Package pdftex.def Info: pic/dag_tez_query85.png used on input line 154.
-(pdftex.def)             Requested size: 293.2521pt x 246.6877pt.
- [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./pic/q1a_time-eps-con
-verted-to.pdf> <./pic/q1b_net-eps-converted-to.pdf>] [3 <./pic/q1b_disk-eps-con
-verted-to.pdf> <./pic/q1c_task_distribution_12-eps-converted-to.pdf>] [4 <./pic
-/q1c_task_distribution_21-eps-converted-to.pdf> <./pic/q1c_task_distribution_50
--eps-converted-to.pdf>] [5 <./pic/q1c_task_distribution_71-eps-converted-to.pdf
-> <./pic/q1c_task_distribution_85-eps-converted-to.pdf>] [6 <./pic/dag_tez_quer
-y12.png> <./pic/dag_tez_query21.png>] [7 <./pic/dag_tez_query50.png> <./pic/dag
-_tez_query71.png>] [8 <./pic/dag_tez_query85.png>] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+\OT1/cmr/m/n/10 (DAG) of Tez
+ []
+
+<pic/dag_tez_21.png, id=83, 393.1488pt x 382.5492pt>
+File: pic/dag_tez_21.png Graphic file (type png)
+ <use pic/dag_tez_21.png>
+Package pdftex.def Info: pic/dag_tez_21.png used on input line 218.
+(pdftex.def)             Requested size: 87.97652pt x 85.60287pt.
+
+Underfull \hbox (badness 4366) in paragraph at lines 219--219
+[]\OT1/cmr/m/n/10 Figure 15: Di-rected
+ []
+
+<pic/dag_tez_50.png, id=84, 663.9204pt x 397.9668pt>
+File: pic/dag_tez_50.png Graphic file (type png)
+ <use pic/dag_tez_50.png>
+Package pdftex.def Info: pic/dag_tez_50.png used on input line 224.
+(pdftex.def)             Requested size: 117.29904pt x 70.30713pt.
+
+Underfull \hbox (badness 1688) in paragraph at lines 225--225
+[]\OT1/cmr/m/n/10 Figure 16: Di-rected Acyclic
+ []
+
+<pic/dag_tez_71.png, id=85, 662.9568pt x 438.438pt>
+File: pic/dag_tez_71.png Graphic file (type png)
+ <use pic/dag_tez_71.png>
+Package pdftex.def Info: pic/dag_tez_71.png used on input line 234.
+(pdftex.def)             Requested size: 140.75975pt x 93.08488pt.
+
+<pic/dag_tez_85.png, id=87, 607.5498pt x 620.0766pt>
+File: pic/dag_tez_85.png Graphic file (type png)
+ <use pic/dag_tez_85.png>
+Package pdftex.def Info: pic/dag_tez_85.png used on input line 240.
+(pdftex.def)             Requested size: 140.75975pt x 143.6554pt.
+
+[8 <./pic/dag_mr_12.png> <./pic/dag_mr_21.png> <./pic/dag_mr_50.png>] [9 <./pic
+/dag_mr_71.png> <./pic/dag_mr_85.png> <./pic/dag_tez_12.png> <./pic/dag_tez_21.
+png> <./pic/dag_tez_50.png>] [10 <./pic/dag_tez_71.png> <./pic/dag_tez_85.png>]
+[11] [12]
 Package epstopdf Info: Source file: <pic/q3a_time.eps>
 (epstopdf)                    date: 2016-10-01 14:28:53
 (epstopdf)                    size: 17179 bytes
@@ -423,37 +492,34 @@ Package epstopdf Info: Source file: <pic/q3a_time.eps>
 (epstopdf)                    size: 7025 bytes
 (epstopdf)             Command: <repstopdf --outfile=pic/q3a_time-eps-converted
 -to.pdf pic/q3a_time.eps>
-(epstopdf)             \includegraphics on input line 281.
+(epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
-
-<pic/q3a_time-eps-converted-to.pdf, id=96, 429.605pt x 318.18875pt>
+ <pic/q3a_time-eps-converted-to.pdf, id=114, 429.605pt x 318.18875pt>
 File: pic/q3a_time-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pic/q3a_time-eps-converted-to.pdf>
-Package pdftex.def Info: pic/q3a_time-eps-converted-to.pdf used on input line 2
-81.
+Package pdftex.def Info: pic/q3a_time-eps-converted-to.pdf used on input line 3
+67.
 (pdftex.def)             Requested size: 293.2521pt x 217.20056pt.
-
-No file parta.bbl.
-[11 <./pic/q3a_time-eps-converted-to.pdf>] (./parta.aux) ) 
+ [13 <./pic/q3a_time-eps-converted-to.pdf>] (./parta.aux) ) 
 Here is how much of TeX's memory you used:
- 2583 strings out of 495028
- 35528 string characters out of 6181498
- 95190 words of memory out of 5000000
- 5749 multiletter control sequences out of 15000+600000
+ 2673 strings out of 495028
+ 36783 string characters out of 6181497
+ 97623 words of memory out of 5000000
+ 5831 multiletter control sequences out of 15000+600000
  9023 words of font info for 33 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,8n,23p,500b,269s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr17.pfb>
-Output written on parta.pdf (11 pages, 650340 bytes).
+ 38i,7n,23p,1046b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb>
+Output written on parta.pdf (13 pages, 584604 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -30,17 +30,17 @@
 
 \section{Experimental Setup}
 
-For this assignment, we set up 4 Standard D12\_v2 virtual machine (VM) on Azure, each with 4 cores, 28 GB memory, 50 GB disk and 200 GB temporary disk. We have hadoop-2.6.0 deployed on each VM, where VM4 works as the master and slave and the rest VMs work as slave. Tez-0.7.1 and Hive-1.2.1 are deployed on the master VM. For the workload, we generate a 50 GB TPC-DS database, which is stored in HDFS. Specifically, we use query 12, 21, 50, 71 and 85 for this assignment. 
+For this assignment, we set up 4 Standard D12\_V2 virtual machines (VMs) on Azure, each with 4 cores, 28 GB memory, 50 GB disk and 200 GB temporary disk. We also have hadoop-2.6.0 deployed on each VM, where VM4 works as the master and slave and the rest VMs work as slaves. Tez-0.7.1 and Hive-1.2.1 are deployed on the master VM. For the workload, we generate a 50 GB TPC-DS database, which is stored in HDFS. Specifically, we use query 12, 21, 50, 71 and 85 to verify the performance of Mapreduce and Tez for this assignment. 
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
 \section{Mapreduce vs. Tez}
-In this section, we evaluate the performance of Hive/Mapreduce and Hive/Tez in term of query completion time, bandwidth consumption, disk read/write. Meanwhile, the differences of Mapreduce and Tez can be seen from the task distribution and Directed Acyclic Graph (DAG).
+In this section, we evaluate the performance of Hive/Mapreduce and Hive/Tez in term of query completion time, bandwidth transmit/receive, disk read/write. Meanwhile, the differences of Mapreduce and Tez can be seen from the task distribution and Directed Acyclic Graph (DAG).
 
 \subsection{Completion time}
-We verify query 12, 21, 50, 71 and 85 of TPC-DS benchmark set with Hive/Mapreduce and Hive/Tez (for simplicity, we use Mapreduce and Tez for the rest of this report). Figure \ref{fig:q1a_time} represents the completion time of the queries, Tez can achieve shorter completion time for query 12, 21 and 50, while Mapreduce outperforms Tez for query 71 and 85. To obtain the reason behind this, we will show the disk I/O, data transfer between VMs, task distribution and DAG of the query for the rest of this section. It seem that some heavy disk I/O and data transfer for Tez consume lots of time, lead to longer completion time, such as that of query 71 and 85. On the other hand, the computation structure may influence the completion time as well, Tez with arbitrary DAG can avoid unnecessary intermediate data read/write and gets a much more natural way to translate the computation for some scenarios, like that of query 12 and 21.
+We run query 12, 21, 50, 71 and 85 of TPC-DS benchmark set with Hive/Mapreduce and Hive/Tez (for simplicity, we use Mapreduce and Tez for the rest of this report). Figure \ref{fig:q1a_time} represents the completion time of the queries, Tez can achieve shorter completion time for query 12, 21 and 50, however Mapreduce outperforms Tez for query 71 and 85. To obtain the reason behind this, we will show the disk I/O, data transfer between VMs, task distribution and DAG of the queries for the rest of this section. It seem that some heavy disk I/O and data transfer for Tez consume lots of time, lead to longer completion time, such as that of query 71 and 85. On the other hand, the computation structure may influence the completion time as well, Tez with arbitrary DAG can avoid unnecessary intermediate data read/write and gets a much more natural way to translate the computation for some scenarios, like that of query 12 and 21.
 
 \begin{figure}
 \begin{center}
@@ -62,7 +62,7 @@ Figure \ref{fig:q1b_net} shows the data transmitted and received during the quer
 \end{center}
 \end{figure}
 
-Figure \ref{fig:q1b_disk} shows the amount of data written/read to/from HDFS during the query's lifetime. Mapreduce write much more to HDFS than Tez does for query 12 and 21, which could cost a large running time. For query 50, Mapreduce and Tez have similar performance in terms of HDFS read/write. For query 71 and 85, the data read from HDFS is similar for Mapreduce and Tez, however Tez writes about 30 and 17 times of data to HDFS than Mapreduce, respectively, which can be one of the possible causes for longer completion time of query 71 and 85 with Tez.
+Figure \ref{fig:q1b_disk} shows the amount of data written/read to/from HDFS during the query's lifetime. Mapreduce write much more to HDFS than Tez does for query 12 and 21, which could cost a large running time. For query 50, Mapreduce and Tez have similar performance in terms of HDFS read/write. For query 71 and 85, the data read from HDFS is similar for Mapreduce and Tez, however Tez writes about 30 and 17 times of data to HDFS than Mapreduce, respectively, which can be one of the possible causes for longer completion time of query 71 and 85 with Tez. And it's known that remote disk write/read can be costly.
 
 \begin{figure}
 \begin{center}
@@ -74,7 +74,7 @@ Figure \ref{fig:q1b_disk} shows the amount of data written/read to/from HDFS dur
 
 \subsection{Tasks}
 
-For the total number of tasks for each query, Tez utilizes more tasks than Mapreduce for query 12, 21 and 50. For Mapreduce, query 12, 21 and 71 have more than 90\% of their tasks to aggregate data, while the numbers of aggregate tasks and HDFS read tasks are much closer, which can be seen from Table \ref{tab:mr_agg_task}. Table \ref{tab:tez_agg_task} shows the aggregate tasks, HDFS read tasks and total tasks of TEZ for different queries. We can observe that Tez also uses  most of the tasks to read data from HDFS for query 12 and 21. Different from that of Mapreduce, Tez only has about 5\% tasks for aggregating from HDFS for query 50. And for query 71 and 85, most of the tasks are working for aggregating from HDFS. 
+For the total number of tasks for each query, Tez utilizes more tasks than Mapreduce for query 12, 21 and 50. For Mapreduce, query 12, 21 and 71 have more than 90\% of their tasks to aggregate data, while the numbers of aggregate tasks and HDFS read tasks are much closer for query 50 and 85, which can be seen from Table \ref{tab:mr_agg_task}. Table \ref{tab:tez_agg_task} shows the aggregate tasks, HDFS read tasks and total tasks of Tez for different queries. We can observe that Tez also uses  most of the tasks to read data from HDFS for query 12 and 21. Different from that of Mapreduce, Tez only has about 5\% tasks for aggregating for query 50. But for query 71 and 85, most of the tasks are working for aggregating from HDFS. 
 
 \begin{table}[htbp]
   \centering
@@ -112,7 +112,7 @@ For the total number of tasks for each query, Tez utilizes more tasks than Mapre
 \end{table}%
 
 
-Figure \ref{fig:q1c_tasks_12} shows the task distribution over time for query 12 with Mapreduce and Tez, respectively. For the query with Mapreduce, we can observe 5 stages with idle time slots (e.g. the time period during 38s to 50s). The reason for those idle time slot without tasks could be explained as follows, when the computation of each stage completed, the intermediate results are written back to HDFS, then the tasks for the next stage start to read those results from HDFS. Repeated interactions with HDFS lead to longer completion time due to relatively inefficient disk I/O, meantime, the restricted Map/Reduce translation is unnatural for some scenarios and can cause high overhead. However, Tez eliminates those drawbacks by using a more flexible DAG oriented model instead of the restricted Map/Reduce stages in Mapreduce. As Figure \ref{fig:q1c_tasks_12} shows that the task distribution of Tez is much more stable than that of Mapreduce, which may benefit the total completion time of the job.
+Figure \ref{fig:q1c_tasks_12} shows the task distribution over time for query 12 with Mapreduce and Tez, respectively. For the query with Mapreduce, we can observe 5 stages with idle time slots (e.g. the time period during 38s from 50s). The reason for those idle time slot without tasks could be explained as follows, when the computation of each stage completed, the intermediate results are written back to HDFS, then the tasks for the next stage start to read those results from HDFS. Repeated interactions with HDFS lead to longer completion time due to relatively inefficient disk I/O, meantime, the restricted Map/Reduce translation is unnatural for some scenarios and can cause high overhead. However, Tez eliminates those drawbacks by using a more flexible DAG oriented model instead of the restricted Map/Reduce stages in Mapreduce. As Figure \ref{fig:q1c_tasks_12} shows that the task distribution of Tez is much more stable than that of Mapreduce, which may benefit the total completion time of the job.
 
 \begin{figure}
 \begin{center}
@@ -122,7 +122,7 @@ Figure \ref{fig:q1c_tasks_12} shows the task distribution over time for query 12
 \end{center}
 \end{figure}
 
-The task distribution of query 21 in Figure \ref{fig:q1c_tasks_21} seems to have similar trend to that of query 12, which also have 5 stages with non-task time periods. With the support of arbitrary DAGs, Tez can avoid unnecessary disk I/O and decomposes the query in an efficient way. As we can see that the completion time of Tez is even shorter than the first stage of Mapreduce.
+The task distribution of query 21 in Figure \ref{fig:q1c_tasks_21} seems to have similar trend to that of query 12, which also have 5 stages with non-task time periods between stages. With the support of arbitrary DAGs, Tez can avoid unnecessary disk I/O and decomposes the query in an efficient way. As we can see that the completion time of Tez is even shorter than the first stage of Mapreduce.
 
 \begin{figure}
 \begin{center}
@@ -152,7 +152,7 @@ Figure \ref{fig:q1c_tasks_71} presents the task distribution of query 71, simila
 \end{center}
 \end{figure}
 
-As we mentioned before, the performance of Tez for query 85 is worse than Mapreduce, it has longer completion time and more data read/write. From the task distribution in Figure \ref{fig:q1c_tasks_85}, we can obtain that Tez runs about 16 tasks in total for a relatively long time period, similar to that of query 71, the limited resource and vertexes/tasks can be one of the causes of the bad performance, noted that we only have 4 virtual machines as slaves. Differently, Mapreduce has a huge first stage with up to 62 tasks, then a couple of small stages with several tasks followed by, and finally accomplishes the job before Tez does.
+As we mentioned before, the performance of Tez for query 85 is worse than that of Mapreduce, it has longer completion time and more data read/write. From the task distribution in Figure \ref{fig:q1c_tasks_85}, we can obtain that Tez runs about 16 tasks in total for a relatively long time period, similar to that of query 71, noted that we only have 4 virtual machines as slaves, the limited resource and vertexes/tasks can be one of the causes of the bad performance. Differently, Mapreduce has a huge first stage with up to 62 tasks, then a couple of small stages with several tasks followed by, and finally accomplishes the job before Tez does.
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.75\textwidth]{pic/q1c_task_distribution_85}
@@ -163,9 +163,9 @@ As we mentioned before, the performance of Tez for query 85 is worse than Mapred
 
 
 \subsection{Directed Acyclic Graph (DAG)}
-In this section, we will show the logic flows of the queries with Mapreduce and Tez. In general, the logic flows after optimization of Mapreduce is simpler than that of Tez, for most queries in this work, it can be a series of sequential Map/Reduce stages. However, the directed acyclic graph (DAG) for Tez is totally different, Tez can build some complicated DAGs with many small stages that are dependent to each other. For instance, the DAGs for query 71 and 85 are two complex ones with many dependencies betweem stages. 
+In this section, we will show the logic flows of the queries with Mapreduce and Tez. In general, the logic flows after optimization of Mapreduce is simpler than that of Tez, for most queries in this work, it can be a series of sequential Map/Reduce stages. However, the directed acyclic graph (DAG) of Tez is totally different, Tez can build some complicated DAGs with many small stages that are dependent to each other. For instance, the DAGs for query 71 and 85 are two complex ones with complicated dependencies between stages. 
 
-The logic flow of query 12 seems to be straight forward for both Mapreduce and Tez, as Figure \ref{fig:q1d_mr_12} and \ref{fig:q1d_tez_12} show. In Mapreduce, two map only stages followed by three stages with one reducer for each of them. For Tez, two mapper followed by one mapper and three reducers, then the output is written to HDFS, it avoids write/read to/from HDFS for each stage and can be much more efficient.
+The logic flow of query 12 seems to be straight forward for both Mapreduce and Tez, as Figure \ref{fig:q1d_mr_12} and \ref{fig:q1d_tez_12} show. In Mapreduce, two map only stages followed by three stages with one reducer for each of them. For Tez, two mapper followed by one mapper and three reducers, then the output is written to HDFS, it avoids write/read to/from HDFS for each stage and can be much more efficient. Notice that Mapreduce will write the output to HDFS after each stage, and the next stage will read data from HDFS, and we did not show that on the DAGs of Mapreduce.
 
 \begin{figure}[htbp]
 \centering
@@ -244,13 +244,13 @@ The logic flow of query 12 seems to be straight forward for both Mapreduce and T
 \end{figure}
 
 
-The DAGs for query 21 are quite similar to that of the query 12, a sequence of map/reduce stages for Mapreduce, and a series of Map/Reduce follows three Mapper for Tez, as shown in Figure \ref{fig:q1d_mr_21} and \ref{fig:q1d_tez_21}.
+The DAGs for query 21 are quite similar to that of the query 12, a sequence of map/reduce stages for Mapreduce, and a series of Map/Reduce follows three Mappers for Tez, as shown in Figure \ref{fig:q1d_mr_21} and \ref{fig:q1d_tez_21}.
 
-For query 50, Mapreduce has a huge first stage which consists of 82 mappers and 86 reducers and consumes near 250s by observing the task distribution in Figure \ref{fig:q1c_tasks_50}, after that, there are three map only stage and two map/reduce stage. Note that, the intermediate output will be written to HDFS and the next stage read those data from HDFS, similar procedures to other queries with Mapreduce. Tez holds 5 independent map stages for the first step, which can be run in parallel, then there are three reduce stages, after the last reduce stage, it write the output back to HDFS, as Figure \ref{fig:q1d_mr_50} and \ref{fig:q1d_tez_50} show.
+For query 50, Mapreduce has a huge first stage which consists of 82 mappers and 86 reducers and consumes near 250s by observing the task distribution in Figure \ref{fig:q1c_tasks_50}, after that, there are three map only stages and two map/reduce stages. Note that, the intermediate output will be written to HDFS and the next stage read those data from HDFS, similar procedures to other queries with Mapreduce. Tez holds 5 independent map stages for the first step, which can be run in parallel, then there are three reduce stages, after the last reduce stage, it writes the final results back to HDFS, as Figure \ref{fig:q1d_mr_50} and \ref{fig:q1d_tez_50} show.
 
-Figure \ref{fig:q1d_mr_71} represents the optimized DAG query 71 with Mapreduce, there are 3 independent map only stages at first, then a map stage handles the intermediate output from the former three stages, and two map/reduce stages are working to obtain the final results after that. The DAG fro query 71 with Tez is more complicated as in Figure \ref{fig:q1d_tez_71}. First of all, there are 5 independent map stages followed by three map stages. Then these three stages will write the output to HDFS, this write operation might be the reason why query 71 with Tez have high disk I/O, high bandwidth consumption and long completion time. A reduce stage also aggregates the output from the three stages mentioned above, and another reduce stage will get the final output.
+Figure \ref{fig:q1d_mr_71} represents the optimized DAG query 71 with Mapreduce, there are 3 independent map only stages at first, then a map stage handles the intermediate output from the former three stages, and two map/reduce stages are working to obtain the final results after that. The DAG for query 71 with Tez is more complicated as in Figure \ref{fig:q1d_tez_71}. First of all, there are 5 independent map stages followed by three map stages. Then these three stages will write the output to HDFS, this write operation might be the reason why query 71 with Tez have high disk I/O, high bandwidth consumption and long completion time. A reduce stage also aggregates the output from the three stages mentioned above, and another reduce stage works for the final output.
 
-From Figure \ref{fig:q1d_mr_85}, we can see that query 85 with Mapreduce has a first stage with 30 mapper and 32 reducers, the 7 mp only or map/reduce stages with several mappers/reducers follows in a sequential way. The DAG for query 85 with tez is in Figure \ref{fig:q1d_tez_85}, which contains several map and reduce stages that related to each other, forms a hierarchy structure of stages. The dependencies between stages and heavy disk write in Figure \ref{fig:q1b_disk} might be the causes of long completion time.
+From Figure \ref{fig:q1d_mr_85}, we can see that query 85 with Mapreduce has a first stage with 30 mappers and 32 reducers, and then 7 map only or map/reduce stages with several mappers/reducers follows in a sequential way. The DAG for query 85 with tez is in Figure \ref{fig:q1d_tez_85}, which contains several map and reduce stages that related to each other, forms a hierarchy structure of stages. The dependencies between stages and heavy disk write in Figure \ref{fig:q1b_disk} might be the causes of long completion time.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
@@ -262,7 +262,7 @@ In this section, we picked up query 21 and varied some specific parameters to ve
 
 \subsection{Hive/MR}
 \subsubsection{Number of Reducers}
-In this experiment, we varied the number of reducers of MR jobs. For each set of parameters, we ran three times and took the average completion time. The results are shown in Table \ref{tab:num_of_reducers}, the completion time is the shortest when there is only one reducer, and the more reducers the more completion time for query. To explain this trend, we think that more reducers can lead to complex data transfer operation for the query, which may increase the total completion time. However, the differences of completion time with various number of reducers are only several seconds, which seems to be small. Note that when we ran the query with the same parameters, the completion time gap of different rounds can be more than 10 seconds.
+In this experiment, we varied the number of reducers of MR jobs. For each set of parameters, we ran three times and took the average completion time. The results are shown in Table \ref{tab:num_of_reducers}, the completion time is the shortest when there is only one reducer, and the more reducers the longer completion time for query. To explain this trend, we think that more reducers can lead to complex data transfer operation between mappers and reducers, which may increase the total completion time. However, the differences of completion time for the queries with various number of reducers are only several seconds, which seems to be small. Note that when we ran the query with the same parameters, the completion time gap between different rounds can be more than 10 seconds.
 
 \begin{table}[htbp]
   \centering
@@ -279,7 +279,7 @@ In this experiment, we varied the number of reducers of MR jobs. For each set of
 
 \subsubsection{Number of Shuffle Parallel Copies}
 
-This time we tuned the number of parallel transfers during the shuffle phase. Also, for each set we ran 3 times and then took the average value. From Table\ref{tab:num_of_parallel}, we can see there is a trend that with the rising of parallel copies, performance tends to decrease. The query with 10 shuffle parallel copies consumes least time to complete. Still, we need to mention that the number of shuffle parallel copies may not influence the completion time a lot in this experiment.
+This time we tuned the number of parallel transfers during the shuffle phase. Also, for each set we ran 3 times and then took the average value. From Table \ref{tab:num_of_parallel}, we can see there is a trend that with the rising of parallel copies, performance tends to decrease. The query with 10 shuffle parallel copies consumes least time to complete. Still, we need to mention that the number of shuffle parallel copies may not influence the completion time a lot in this experiment.
 
 \begin{table}[htbp]
   \centering
@@ -298,12 +298,12 @@ This time we tuned the number of parallel transfers during the shuffle phase. Al
 
 \subsubsection{Value of Slow Start}
 
-Then, we tried different value on slow start property. From Table\ref{tab:val_of_slow}, we can tell that when the slow start is 0.75, it has the best performance and it is better than the default value 1.
+Then, we tried different values on slow start property. From Table \ref{tab:val_of_slow}, we can tell that when the slow start is 0.75, it has the best performance and it is better than the default value 1.
 
 \begin{table}[htbp]
   \centering
   \caption{Value of Slow Start and Completion Time}
-    \begin{tabular}{rrrrrr}
+    \begin{tabular}{crrrrr}
     \toprule
     Value of Slow Start & 0.05  & 0.25  & 0.5   & 0.75  & 1 \\
     \midrule
@@ -318,6 +318,7 @@ Then, we tried different value on slow start property. From Table\ref{tab:val_of
 
 \subsection{Hive/Tez}
 \subsubsection{Container Reuse}
+With other parameters default, the experiment without container reuse costs 58.23s to complete, and when we enabled container reuse, it takes 50.36s in average. This indicates that reusing containers can avoid some overhead of container initialization and removal, thus can improve the overall performance of Tez.
 
 \subsubsection{Number of Shuffle Parallel Copies}
 
@@ -341,7 +342,7 @@ This time, we tuned the number of shuffle parallel copies on Tez jobs. 3 Times f
 
 \subsubsection{Hive/MR}
 
-The best parameters for MR job Query 21 is reducers = 1, parallel copies = 10, slow start = 0.75. After we applied these parameters on Query 12, the average completion time is 178.044 seconds, which is greater than what we got from part 1 experiments with the default settings, 143.804 seconds. After we applied these parameters on Query 50, the average completion time is 571.969 seconds, which is greater than what we got from part 1 experiments with the default settings, 409.411 seconds. Thus, we can tell that it is not the best for Query 12 and 50.
+The best parameters for MR job Query 21 is reducers = 1, parallel copies = 10, slow start = 0.75. After we applied these parameters on Query 12, the average completion time is 178.044 seconds, which is greater than what we got from part 1 experiments with the default settings, 143.804 seconds. After we applied these parameters on Query 50, the average completion time is 571.969 seconds, which is also greater than what we got from part 1 experiments with the default settings, 409.411 seconds. Thus, we can tell that it is not the best for Query 12 and 50. Different queries may have different map/reduce stages, and the best parameter set may not suit other queries.
 
 % % TODO rational
 
@@ -358,7 +359,7 @@ The best parameters for Tez job Query 21 is reducers = 1, parallel copies = 5, w
 \section{Experiments with Slave Failure}
 \subsection{Completion Time}
 
-~~~~~This time we compare the performance for MR and Tez, with one dataNode fails at the time of 25 \% completion and 75 \% completion. From the Figure\ref{fig:q3a_time}, we can tell that comparing to the completion time of no failure occurs, one dataNode failure leads to the increase of the completion time. And, it is even more expensive if the failure takes place earlier. As shown in Figure \ref{fig:q3a_time}, failure at 25 \% makes the completion time much longer than failure at 75 \%. This scenario can be explained if when we kill a datanode at 25 \%, some intermediate data was lost or some HDFS read tasks are disrupted, then it may take some time to recovery the data or process. When kill a datanode at 75 \%, if the tasks are working for aggregating/computation, the datanode failure of HDFS can have less influence than that of at 25 \%. But it may still longer the total completion time.
+~~~~~This time we compare the performance for MR and Tez, with one DataNode fails at the time of 25 \% completion and 75 \% completion. From Figure \ref{fig:q3a_time}, we can tell that comparing to the completion time of no failure occurs, one DataNode failure leads to the increase of the completion time. And, it is even more expensive if the failure takes place earlier. As shown in Figure \ref{fig:q3a_time}, failure at 25 \% completion makes the completion time much longer than failure at 75 \% completion. This scenario can be explained if when we kill a DataNode at 25 \% completion, some intermediate data was lost or some HDFS read tasks are disrupted, then it may take some time to recovery the data or process. When kill a DataNode at 75 \% completion, if the tasks are working for aggregating/computation, the DataNode failure of HDFS can have less influence than that of at 25 \% completion. But it may still longer the total completion time.
 
 
 \begin{figure}

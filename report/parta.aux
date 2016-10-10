@@ -1,66 +1,70 @@
 \relax 
-\@writefile{toc}{\contentsline {section}{\numberline {1}Hadoop, Tez, Hive (Optional)}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Experimental Setup}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}VMs on Azure}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Software}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Mapreduce vs. Tez}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Completion time}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Bandwidth}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Disk}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Tasks}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Directed Acyclic Graph (DAG)}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments with Various Parameters}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Experimental Setup}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Mapreduce vs. Tez}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Completion time}{1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Completion Time of MR and Tez (default parameters).}}{2}}
 \newlabel{fig:q1a_time}{{1}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Bandwidth Consumption of MR and Tez (default parameters).}}{2}}
-\newlabel{fig:q1b_net}{{2}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Network and Disk}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Tasks}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Bandwidth Consumption of MR and Tez (default parameters).}}{3}}
+\newlabel{fig:q1b_net}{{2}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Disk I/O of MR and Tez (default parameters).}}{3}}
 \newlabel{fig:q1b_disk}{{3}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Tasks Distribution over Time (query 12).}}{3}}
-\newlabel{fig:q1c_tasks_12}{{4}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Tasks Distribution over Time (query 21).}}{4}}
-\newlabel{fig:q1c_tasks_21}{{5}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Tasks Distribution over Time (query 50).}}{4}}
-\newlabel{ffig:q1c_tasks_50}{{6}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Tasks Distribution over Time (query 71).}}{5}}
-\newlabel{fig:q1c_tasks_71}{{7}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Tasks Distribution over Time (query 85).}}{5}}
-\newlabel{fig:q1c_tasks_85}{{8}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 12).}}{6}}
-\newlabel{fig:q1d_tez_12}{{9}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 21).}}{6}}
-\newlabel{fig:q1d_tez_21}{{10}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 50).}}{7}}
-\newlabel{fig:q1d_tez_50}{{11}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 71).}}{7}}
-\newlabel{fig:q1d_tez_71}{{12}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 85).}}{8}}
-\newlabel{fig:q1d_tez_85}{{13}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Hive/MR}{9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Number of Reducers}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Number of Reducers and Completion Time}}{9}}
-\newlabel{tab:num_of_reducers}{{1}{9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Number of Shuffle Parallel Copies}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Number of Shuffle Parallel Copies and Completion Time}}{9}}
-\newlabel{tab:num_of_parallel}{{2}{9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Value of Slow Start}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Value of Slow Start and Completion Time}}{9}}
-\newlabel{tab:val_of_slow}{{3}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Hive/Tez}{10}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Container Reuse}{10}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Number of Shuffle Parallel Copies}{10}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Number of Shuffle Parallel Copies and Completion Time for Tez}}{10}}
-\newlabel{tab:num_shuffle_parallel_tez}{{4}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Are the Best Parameters for Query 21 Still Best for Query 12 and 50?}{10}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Hive/MR}{10}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Hive/Tez}{10}}
-\bibstyle{apalike}
-\bibdata{sample}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Completion Time of MR and Tez with Failure (query 71).}}{11}}
-\newlabel{fig:q3a_time}{{14}{11}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Experiments with Slave Failure}{11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Completion Time}{11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Tasks Variation}{11}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Hive/MR}{11}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Hive/Tez}{11}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The Number of Aggregate Tasks, HDFS Read Tasks and Total Tasks for Mapreduce}}{4}}
+\newlabel{tab:mr_agg_task}{{1}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The Number of Aggregate Tasks, HDFS Read Tasks and Total Tasks for Tez}}{4}}
+\newlabel{tab:tez_agg_task}{{2}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Tasks Distribution over Time (query 12).}}{5}}
+\newlabel{fig:q1c_tasks_12}{{4}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Tasks Distribution over Time (query 21).}}{5}}
+\newlabel{fig:q1c_tasks_21}{{5}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Tasks Distribution over Time (query 50).}}{6}}
+\newlabel{fig:q1c_tasks_50}{{6}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Directed Acyclic Graph (DAG)}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Tasks Distribution over Time (query 71).}}{7}}
+\newlabel{fig:q1c_tasks_71}{{7}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Tasks Distribution over Time (query 85).}}{7}}
+\newlabel{fig:q1c_tasks_85}{{8}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Directed Acyclic Graph (DAG) of MR (query 12).}}{8}}
+\newlabel{fig:q1d_mr_12}{{9}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Directed Acyclic Graph (DAG) of MR (query 21).}}{8}}
+\newlabel{fig:q1d_mr_21}{{10}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Directed Acyclic Graph (DAG) of MR (query 50).}}{8}}
+\newlabel{fig:q1d_mr_50}{{11}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Directed Acyclic Graph (DAG) of MR (query 71).}}{9}}
+\newlabel{fig:q1d_mr_71}{{12}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Directed Acyclic Graph (DAG) of MR (query 85).}}{9}}
+\newlabel{fig:q1d_mr_85}{{13}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 12).}}{9}}
+\newlabel{fig:q1d_tez_12}{{14}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 21).}}{9}}
+\newlabel{fig:q1d_tez_21}{{15}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 50).}}{9}}
+\newlabel{fig:q1d_tez_50}{{16}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 71).}}{10}}
+\newlabel{fig:q1d_tez_71}{{17}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Directed Acyclic Graph (DAG) of Tez (query 85).}}{10}}
+\newlabel{fig:q1d_tez_85}{{18}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experiments with Various Parameters}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Hive/MR}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Number of Reducers}{10}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Number of Reducers and Completion Time}}{11}}
+\newlabel{tab:num_of_reducers}{{3}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Number of Shuffle Parallel Copies}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Number of Shuffle Parallel Copies and Completion Time}}{11}}
+\newlabel{tab:num_of_parallel}{{4}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Value of Slow Start}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Value of Slow Start and Completion Time}}{11}}
+\newlabel{tab:val_of_slow}{{5}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Hive/Tez}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Container Reuse}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Number of Shuffle Parallel Copies}{12}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Number of Shuffle Parallel Copies and Completion Time for Tez}}{12}}
+\newlabel{tab:num_shuffle_parallel_tez}{{6}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Are the Best Parameters for Query 21 Still Best for Query 12 and 50?}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Hive/MR}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Hive/Tez}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Completion Time of MR and Tez with Failure (query 71).}}{13}}
+\newlabel{fig:q3a_time}{{19}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments with Slave Failure}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Completion Time}{13}}
